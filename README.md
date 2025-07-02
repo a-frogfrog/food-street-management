@@ -1,1 +1,1 @@
-# food-street-admin
+# food-street-management
