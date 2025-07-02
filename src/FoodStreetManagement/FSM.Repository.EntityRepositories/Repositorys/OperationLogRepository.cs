@@ -1,0 +1,14 @@
+﻿using FSM.Infrastructure.Attribute;
+using FSM.Infrastructure.EFCore.MySql.Models;
+using FSM.Repository.Interface;
+
+namespace FSM.Repository.EntityRepositories
+{
+    [Provider, Inject]
+    public class OperationLogRepository : BaseRepository<Operationlog>
+    {
+        public OperationLogRepository(IRepository<Operationlog> repository) : base(repository)
+        {
+        }
+    }
+}

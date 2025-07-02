@@ -1,0 +1,9 @@
+{
+  "name": "@frog/constants",
+  "private":true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0"
+}

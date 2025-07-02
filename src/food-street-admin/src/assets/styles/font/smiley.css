@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'SmileySans';
+  src: url('./SmileySans-Oblique.otf.woff2') format('woff2'),
+    url('./SmileySans-Oblique.otf.woff') format('woff');
+}
