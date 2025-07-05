@@ -1,4 +1,4 @@
-﻿using FSM.Api.Admin.Options;
+﻿using FSM.Api.Options;
 using FSM.Infrastructure.Attribute;
 using FSM.Infrastructure.Dto.Api.Request.Admin.Login;
 using FSM.Infrastructure.Dto.Common;
@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
-namespace FSM.Api.Admin.Controllers.Admin
+namespace FSM.Api.Controllers.Admin
 {
     /// <summary>
     /// Auth 模块
@@ -48,7 +48,7 @@ namespace FSM.Api.Admin.Controllers.Admin
 
 
         /// <summary>
-        /// 登录 
+        /// Admin 登录 
         /// </summary>
         /// <param name="dto"></param>
         /// <returns></returns>
@@ -88,7 +88,7 @@ namespace FSM.Api.Admin.Controllers.Admin
         }
 
         /// <summary>
-        /// 检查登录状态
+        /// Admin 检查登录状态
         /// </summary>
         /// <returns></returns>             
         [HttpGet]

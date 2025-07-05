@@ -2,7 +2,7 @@
 using FSM.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FSM.Api.Admin.Controllers
+namespace FSM.Api.Controllers
 {
     /// <summary>
     /// Base Controller

@@ -1,2 +1,2 @@
-export * from "./modules/empty";
-export * from "./modules/permission";
+export * from "./src/empty";
+export * from "./src/permission";

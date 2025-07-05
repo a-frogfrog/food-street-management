@@ -1,7 +1,7 @@
 ﻿using FSM.Infrastructure.Attribute;
 using System.Reflection;
 
-namespace FSM.Api.Admin.utils
+namespace FSM.Api.utils
 {
     /// <summary>
     /// 扩展注入

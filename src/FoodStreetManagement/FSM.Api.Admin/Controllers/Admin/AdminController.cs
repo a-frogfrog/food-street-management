@@ -4,7 +4,7 @@ using FSM.Service.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FSM.Api.Admin.Controllers.Admin
+namespace FSM.Api.Controllers.Admin
 {
     /// <summary>
     /// Admin 模块

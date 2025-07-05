@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace FSM.Api.Admin.Filters
+namespace FSM.Api.Filters
 {
     /// <summary>
     /// 响应过滤器

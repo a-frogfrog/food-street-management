@@ -22,9 +22,10 @@ namespace FSM.Infrastructure.EFCore.MySql.Models
         public virtual DbSet<Operationlog> Operationlogs { get; set; } = null!;
         public virtual DbSet<Permission> Permissions { get; set; } = null!;
         public virtual DbSet<Product> Products { get; set; } = null!;
+        public virtual DbSet<Supplier> Suppliers { get; set; } = null!;
+        public virtual DbSet<Supplierloginlog> Supplierloginlogs { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
         public virtual DbSet<Userpermission> Userpermissions { get; set; } = null!;
-
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -403,6 +404,144 @@ namespace FSM.Infrastructure.EFCore.MySql.Models
                     .HasMaxLength(50)
                     .HasColumnName("unit")
                     .HasComment("单位/规格（kg/件/箱）");
+            });
+
+            modelBuilder.Entity<Supplier>(entity =>
+            {
+                entity.HasKey(e => e.SuppId)
+                    .HasName("PRIMARY");
+
+                entity.ToTable("suppliers");
+
+                entity.HasComment("供应商表");
+
+                entity.Property(e => e.SuppId)
+                    .HasMaxLength(32)
+                    .HasColumnName("suppId")
+                    .HasComment("供应商ID");
+
+                entity.Property(e => e.Account)
+                    .HasMaxLength(11)
+                    .HasColumnName("account")
+                    .HasComment("账号");
+
+                entity.Property(e => e.Contacts)
+                    .HasMaxLength(32)
+                    .HasColumnName("contacts")
+                    .HasComment("联系人");
+
+                entity.Property(e => e.CreateTime)
+                    .HasColumnType("datetime")
+                    .HasColumnName("createTime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Description)
+                    .HasMaxLength(999)
+                    .HasColumnName("description")
+                    .HasComment("备用");
+
+                entity.Property(e => e.PasswordHash)
+                    .HasMaxLength(32)
+                    .HasColumnName("passwordHash")
+                    .HasComment("密码");
+
+                entity.Property(e => e.PasswordSalt)
+                    .HasMaxLength(32)
+                    .HasColumnName("passwordSalt")
+                    .HasComment("密码盐值");
+
+                entity.Property(e => e.Status)
+                    .HasColumnName("status")
+                    .HasComment("状态");
+
+                entity.Property(e => e.SuppName)
+                    .HasMaxLength(50)
+                    .HasColumnName("suppName")
+                    .HasComment("供应商名称");
+
+                entity.Property(e => e.UpdateTime)
+                    .HasColumnType("datetime")
+                    .ValueGeneratedOnAddOrUpdate()
+                    .HasColumnName("updateTime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("修改时间");
+            });
+
+            modelBuilder.Entity<Supplierloginlog>(entity =>
+            {
+                entity.HasKey(e => e.LogId)
+                    .HasName("PRIMARY");
+
+                entity.ToTable("supplierloginlogs");
+
+                entity.HasComment("供应商登录日志表");
+
+                entity.Property(e => e.LogId)
+                    .HasMaxLength(32)
+                    .HasColumnName("logId")
+                    .HasComment("日志ID");
+
+                entity.Property(e => e.CreateTime)
+                    .HasColumnType("datetime")
+                    .HasColumnName("createTime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.ErrorMessage)
+                    .HasColumnType("text")
+                    .HasColumnName("errorMessage")
+                    .HasComment("错误信息");
+
+                entity.Property(e => e.IpAddress)
+                    .HasMaxLength(50)
+                    .HasColumnName("ipAddress")
+                    .HasComment("IP地址");
+
+                entity.Property(e => e.Location)
+                    .HasColumnType("text")
+                    .HasColumnName("location")
+                    .HasComment("IP地址转换为实际地址");
+
+                entity.Property(e => e.LoginTime)
+                    .HasColumnType("datetime")
+                    .HasColumnName("loginTime")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                    .HasComment("登录时间");
+
+                entity.Property(e => e.LoginType)
+                    .HasMaxLength(50)
+                    .HasColumnName("loginType")
+                    .HasComment("登录类型");
+
+                entity.Property(e => e.SessionId)
+                    .HasMaxLength(32)
+                    .HasColumnName("sessionId")
+                    .HasComment("会话ID");
+
+                entity.Property(e => e.Source)
+                    .HasMaxLength(20)
+                    .HasColumnName("source")
+                    .HasComment("登录来源（PC端，移动端等）");
+
+                entity.Property(e => e.Status)
+                    .HasColumnName("status")
+                    .HasComment("状态（是否成功）");
+
+                entity.Property(e => e.SuppId)
+                    .HasMaxLength(32)
+                    .HasColumnName("suppId")
+                    .HasComment("供应商ID");
+
+                entity.Property(e => e.SuppName)
+                    .HasMaxLength(50)
+                    .HasColumnName("suppName")
+                    .HasComment("供应商名称");
+
+                entity.Property(e => e.UserAgent)
+                    .HasColumnType("text")
+                    .HasColumnName("userAgent")
+                    .HasComment("用户设备信息");
             });
 
             modelBuilder.Entity<User>(entity =>

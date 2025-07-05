@@ -12,7 +12,9 @@
       "@frog/utils/*": ["packages/utils/*"],
       "@frog/hooks/*": ["packages/hooks/*"],
       "@frog/constants/*": ["packages/constants/*"],
-      "@frog/directives/*": ["packages/directives/*"]
+      "@frog/directives/*": ["packages/directives/*"],
+      "@frog/event/*": ["packages/event/*"],
+      "@frog/request/*": ["packages/request/*"]
     },
     /* Linting */
     "strict": true,

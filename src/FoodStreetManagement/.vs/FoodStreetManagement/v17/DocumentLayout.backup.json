@@ -1,18 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Study\\code\\S4\\food-street-management\\FoodStreetManagement\\",
+  "WorkspaceRootPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.Admin.csproj|d:\\study\\code\\s4\\food-street-management\\foodstreetmanagement\\fsm.api.admin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.Admin.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.Admin.csproj|solutionrelative:fsm.api.admin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.Admin.csproj|d:\\study\\code\\s4\\food-street-management\\foodstreetmanagement\\fsm.api.admin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.Admin.csproj|solutionrelative:fsm.api.admin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\controllers\\admin\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\controllers\\admin\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.Admin.csproj|d:\\study\\code\\s4\\food-street-management\\foodstreetmanagement\\fsm.api.admin\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.Admin.csproj|solutionrelative:fsm.api.admin\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\utils\\injectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\utils\\injectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\options\\authoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\options\\authoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\middlewares\\exceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\middlewares\\exceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\filters\\responsefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\filters\\responsefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\filters\\permissionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\filters\\permissionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\filters\\operationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\filters\\operationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\filters\\basefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\filters\\basefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\controllers\\supplier\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\controllers\\supplier\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\controllers\\supplier\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\controllers\\supplier\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\controllers\\admin\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\controllers\\admin\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\controllers\\admin\\permissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\controllers\\admin\\permissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\controllers\\admin\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\controllers\\admin\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\controllers\\admin\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\controllers\\admin\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\fsm.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\fsm.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|d:\\study\\code\\project\\food-street-management\\src\\foodstreetmanagement\\fsm.api.admin\\controllers\\admin\\masterdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14272E6-D748-47C9-8558-0C543D55F045}|FSM.Api.Admin\\FSM.Api.csproj|solutionrelative:fsm.api.admin\\controllers\\admin\\masterdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +82,228 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 19,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InjectionExtensions.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\utils\\InjectionExtensions.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\utils\\InjectionExtensions.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\utils\\InjectionExtensions.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\utils\\InjectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:17:26.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthOptions.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Options\\AuthOptions.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Options\\AuthOptions.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Options\\AuthOptions.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Options\\AuthOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:17:22.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:17:17.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ResponseFilter.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Filters\\ResponseFilter.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Filters\\ResponseFilter.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Filters\\ResponseFilter.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Filters\\ResponseFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:17:11.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PermissionFilter.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Filters\\PermissionFilter.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Filters\\PermissionFilter.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Filters\\PermissionFilter.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Filters\\PermissionFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:17:08.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OperationFilter.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Filters\\OperationFilter.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Filters\\OperationFilter.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Filters\\OperationFilter.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Filters\\OperationFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:17:05.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseFilter.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Filters\\BaseFilter.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Filters\\BaseFilter.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Filters\\BaseFilter.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Filters\\BaseFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:17:01.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SupplierController.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Supplier\\SupplierController.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Controllers\\Supplier\\SupplierController.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Supplier\\SupplierController.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Controllers\\Supplier\\SupplierController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:14:25.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FSM.Api",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\FSM.Api.csproj",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\FSM.Api.csproj",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\FSM.Api.csproj",
+              "RelativeToolTip": "FSM.Api.Admin\\FSM.Api.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-05T15:13:40.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Supplier\\AuthController.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Controllers\\Supplier\\AuthController.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Supplier\\AuthController.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Controllers\\Supplier\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:13:26.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UploadController.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Admin\\UploadController.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Controllers\\Admin\\UploadController.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Admin\\UploadController.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Controllers\\Admin\\UploadController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:13:22.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Admin\\ProductController.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Controllers\\Admin\\ProductController.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Admin\\ProductController.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Controllers\\Admin\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:13:18.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PermissionController.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Admin\\PermissionController.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Controllers\\Admin\\PermissionController.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Admin\\PermissionController.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Controllers\\Admin\\PermissionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:13:14.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MasterDataController.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Admin\\MasterDataController.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Controllers\\Admin\\MasterDataController.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Admin\\MasterDataController.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Controllers\\Admin\\MasterDataController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:13:10.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Admin\\AuthController.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Controllers\\Admin\\AuthController.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Admin\\AuthController.cs*",
+              "RelativeToolTip": "FSM.Api.Admin\\Controllers\\Admin\\AuthController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:13:03.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Admin\\AdminController.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Controllers\\Admin\\AdminController.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\Admin\\AdminController.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Controllers\\Admin\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:12:47.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "FSM.Api.Admin\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "FSM.Api.Admin\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T15:12:23.856Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -34,40 +314,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Study\\code\\S4\\food-street-management\\FoodStreetManagement\\FSM.Api.Admin\\appsettings.json",
-              "RelativeDocumentMoniker": "FSM.Api.Admin\\appsettings.json",
-              "ToolTip": "D:\\Study\\code\\S4\\food-street-management\\FoodStreetManagement\\FSM.Api.Admin\\appsettings.json",
-              "RelativeToolTip": "FSM.Api.Admin\\appsettings.json",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-02T07:51:47.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Study\\code\\S4\\food-street-management\\FoodStreetManagement\\FSM.Api.Admin\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "FSM.Api.Admin\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Study\\code\\S4\\food-street-management\\FoodStreetManagement\\FSM.Api.Admin\\Properties\\launchSettings.json",
-              "RelativeToolTip": "FSM.Api.Admin\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-01T08:41:27.618Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Study\\code\\S4\\food-street-management\\FoodStreetManagement\\FSM.Api.Admin\\Program.cs",
+              "DocumentMoniker": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Program.cs",
               "RelativeDocumentMoniker": "FSM.Api.Admin\\Program.cs",
-              "ToolTip": "D:\\Study\\code\\S4\\food-street-management\\FoodStreetManagement\\FSM.Api.Admin\\Program.cs",
-              "RelativeToolTip": "FSM.Api.Admin\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAA2AAAAAAAAAA==",
+              "ToolTip": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api.Admin\\Program.cs*",
+              "RelativeToolTip": "FSM.Api.Admin\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T08:35:59.572Z",
+              "WhenOpened": "2025-07-05T15:12:02.628Z",
               "EditorCaption": ""
             }
           ]

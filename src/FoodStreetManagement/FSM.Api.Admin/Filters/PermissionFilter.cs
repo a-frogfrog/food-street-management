@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Reflection;
 
-namespace FSM.Api.Admin.Filters
+namespace FSM.Api.Filters
 {
     /// <summary>
     /// 权限过滤器

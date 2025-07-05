@@ -1,4 +1,4 @@
-﻿namespace FSM.Api.Admin.Options
+﻿namespace FSM.Api.Options
 {
     /// <summary>
     /// AuthOptions

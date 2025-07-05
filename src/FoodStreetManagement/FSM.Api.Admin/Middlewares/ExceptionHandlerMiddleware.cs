@@ -3,7 +3,7 @@ using FSM.Infrastructure.Dto.Service.Log.Error;
 using FSM.Infrastructure.Tools;
 using FSM.Service.Interface;
 
-namespace FSM.Api.Admin.MiddleWares
+namespace FSM.Api.MiddleWares
 {
     /// <summary>
     /// 异常处理中间件

@@ -1,3 +1,3 @@
-export { default as createRequest } from "./request";
-export { default as eventEmitter } from "./eventEmitter";
-export * from "./progress";
+export { default as createRequest } from "./src/request";
+export { default as eventEmitter } from "./src/eventEmitter";
+export * from "./src/progress";

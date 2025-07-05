@@ -1,7 +1,7 @@
 using FSM.Api.Admin.Configs;
-using FSM.Api.Admin.Filters;
-using FSM.Api.Admin.Options;
-using FSM.Api.Admin.utils;
+using FSM.Api.Filters;
+using FSM.Api.Options;
+using FSM.Api.utils;
 using FSM.Repository.Instance;
 using FSM.Repository.Interface;
 using FSM.Service.Instance;
@@ -20,64 +20,88 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+#region Services
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor(); // 注入HttpContextAccessor
 builder.Services.AddHttpClient();
 
+// ForwardedHeaders
+builder.Services.Configure<ForwardedHeadersOptions>(options =>
+{
+    options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
+    options.KnownNetworks.Clear(); // 信任所有代理
+    options.KnownProxies.Clear();
+});
+
+//健康检查
+builder.Services.AddHealthChecks();
+
+//配置文件
+builder.Configuration
+    .AddJsonFile($"appsettings{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+    .AddJsonFile("appsettings.Service.json", optional: true,reloadOnChange:true)
+    .AddEnvironmentVariables()
+    .AddCommandLine(args);
+#endregion
+
 #region Dependency injection
-//���ݿ�������ע�� MySql
+
+// 数据库上下文
 builder.Services.AddScoped<DbContext, FSM.Infrastructure.EFCore.MySql.Models.fsmdbContext>();
+//数据库连接
 builder.Services.AddDbContextPool<FSM.Infrastructure.EFCore.MySql.Models.fsmdbContext>(options =>
 {
     options.UseMySql(builder.Configuration.GetConnectionString("MySQL"),
         new MySqlServerVersion(new Version(8, 0, 40)),
-        provider =>
-        {
-            provider.CommandTimeout(20);
-        });
+        provider => { provider.CommandTimeout(20); });
     options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 }, poolSize: 64);
-//�ִ�ע��
+//仓储
 builder.Services.AddScoped(typeof(IRepository<>), typeof(MySqlRepository<>));
-//�ֿ�ʵ��ע��
-builder.Services.AddScoped(Assembly.Load("FSM.Repository.EntityRepositories"), Assembly.Load("FSM.Repository.EntityRepositories"));
-//��������ע��
+//仓储类
+builder.Services.AddScoped(Assembly.Load("FSM.Repository.EntityRepositories"),
+    Assembly.Load("FSM.Repository.EntityRepositories"));
+//服务依赖
 builder.Services.AddScoped(Assembly.Load("FSM.Service.Dependencies"), Assembly.Load("FSM.Service.Dependencies"));
-//����ע��
+//服务实现
 builder.Services.AddScoped(Assembly.Load("FSM.Service.Interface"), Assembly.Load("FSM.Service.Instance"));
-//������ע��
+//工具类
 builder.Services.AddScoped(Assembly.Load("FSM.Infrastructure.Tools"), Assembly.Load("FSM.Infrastructure.Tools"));
-//������ע��
+//帮助类
 builder.Services.AddSingleton(Assembly.Load("FSM.Infrastructure.Helpers"), Assembly.Load("FSM.Infrastructure.Helpers"));
-//����ע��
+//配置
 builder.Services.Configure<AuthOptions>(builder.Configuration.GetSection(AuthOptions.SectionName));
 var fileStorageConfig = FileStorageConfig.LoadConfig(builder.Configuration);
 builder.Services.AddSingleton(fileStorageConfig);
 var fileUploadConfig = FileUploadConfig.LoadConfig(builder.Configuration);
 builder.Services.AddSingleton(fileUploadConfig);
+
 #endregion
 
 #region Cors
-//Corss
+
+//Cors
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("CorsPolicy", builder =>
+    options.AddPolicy("CorsPolicy", policy =>
     {
-        builder.WithOrigins(
-            "http://localhost:5173",
-            "http://localhost:4173",
-            "http://admin.fsm.frogfrog.cn",
-            "https://admin.fsm.frogfrog.cn"
+        policy.WithOrigins(
+                "http://localhost:5173",
+                "http://localhost:4173",
+                "http://admin.fsm.frogfrog.cn",
+                "https://admin.fsm.frogfrog.cn"
             ).AllowAnyHeader()
             .AllowAnyMethod()
             .SetPreflightMaxAge(TimeSpan.FromHours(1));
     });
 });
+
 #endregion
 
 #region Swagger
-//����Swagger
+
+//Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 if (builder.Environment.IsEnvironment("Development"))
@@ -89,7 +113,7 @@ if (builder.Environment.IsEnvironment("Development"))
         {
             Title = "Food Street Management Api",
             Version = "v1.0",
-            Description = "Food Street Management Api �ӿ��ĵ�",
+            Description = "Food Street Management Api",
             Contact = new OpenApiContact
             {
                 Name = "FrogFrog",
@@ -97,40 +121,39 @@ if (builder.Environment.IsEnvironment("Development"))
             }
         });
 
-        string basePath = Path.GetDirectoryName(typeof(Program).Assembly.Location)!;
         options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "FSM.Api.Admin.xml"), true);
         options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "FSM.Infrastructure.Dto.xml"), true);
 
         options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
-            Description = "JWT��Ȩ(���ݽ�������ͷ�н��д���) ֱ�����¿�������Bearer {token}��ע������֮����һ���ո�,��ȷ��ʽΪ Bearer+�ո�+Token��\"",
-            Name = "Authorization",//jwtĬ�ϵĲ�������
-            In = ParameterLocation.Header,//jwtĬ�ϴ��Authorization��Ϣ��λ��(����ͷ��)
+            Description =
+                "JWT��Ȩ(���ݽ�������ͷ�н��д���) ֱ�����¿�������Bearer {token}��ע������֮����һ���ո�,��ȷ��ʽΪ Bearer+�ո�+Token��\"",
+            Name = "Authorization",
+            In = ParameterLocation.Header,
             Type = SecuritySchemeType.ApiKey
         });
 
         options.AddSecurityRequirement(new OpenApiSecurityRequirement
         {
             {
-               new OpenApiSecurityScheme
-               {
-                   Reference = new OpenApiReference()
+                new OpenApiSecurityScheme
                 {
-                    Id = "Bearer",
-                    Type = ReferenceType.SecurityScheme
-                }
-
-               }, Array.Empty<string>()
+                    Reference = new OpenApiReference()
+                    {
+                        Id = "Bearer",
+                        Type = ReferenceType.SecurityScheme
+                    }
+                },
+                Array.Empty<string>()
             }
         });
-
     });
 }
 
 #endregion
 
 #region Authentication
-// ����JWT ��Ȩ
+
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -147,37 +170,33 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"])),
             ClockSkew = TimeSpan.Zero
         };
-        //��֤ token
+        //验证 token
         options.Events = new JwtBearerEvents
         {
             OnMessageReceived = context =>
             {
-
                 var authorization = context.Request.Headers["Authorization"].ToString();
-                if (!string.IsNullOrEmpty(authorization))
+                if (string.IsNullOrEmpty(authorization))
                 {
-                    try
-                    {
-                        var header = new JwtSecurityTokenHandler();
-                        var token = header.ReadJwtToken(authorization.Replace("Bearer ", ""));
-                        string payload = token.Claims.ToList().First(f => f.Type == ClaimTypes.Name).Value.ToString();
-                        //��֤payload
-                        var _authService = context.HttpContext.RequestServices.GetService<IAuthService>();
-                        var result = _authService!.ValidateToken(payload);
-                        if (!result)
-                        {
-                            context.Request.Headers["Authorization"] = string.Empty;
-                            //context.Response.StatusCode = 200;
-                            //context.Response.WriteAsJsonAsync(ResponseHelper.Unauthorized());
-                        }
-                    }
-                    catch (Exception)
-                    {
+                    context.Request.Headers["Authorization"] = string.Empty;
+                }
 
+                try
+                {
+                    var header = new JwtSecurityTokenHandler();
+                    var token = header.ReadJwtToken(authorization.Replace("Bearer ", ""));
+                    var payload = token.Claims.ToList().First(f => f.Type == ClaimTypes.Name).Value.ToString();
+                    //payload
+                    var authService = context.HttpContext.RequestServices.GetService<IAuthService>();
+                    var result = authService!.ValidateToken(payload);
+                    if (!result)
+                    {
                         context.Request.Headers["Authorization"] = string.Empty;
-                        //context.Response.StatusCode = 200;
-                        //context.Response.WriteAsJsonAsync(ResponseHelper.Unauthorized());
                     }
+                }
+                catch (Exception)
+                {
+                    context.Request.Headers["Authorization"] = string.Empty;
                 }
 
 
@@ -190,68 +209,62 @@ builder.Services.AddAuthorization();
 #endregion
 
 #region Filter
-//���ӹ�����
+
+//全局Filter
 builder.Services.AddControllers(options =>
 {
     options.Filters.Add(typeof(PermissionFilter));
     options.Filters.Add(typeof(ResponseFilter));
     options.Filters.Add(typeof(OperationFilter));
 });
+
 #endregion
 
 
-// ForwardedHeaders
-builder.Services.Configure<ForwardedHeadersOptions>(options =>
-{
-    options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
-    options.KnownNetworks.Clear();  // 信任所有代理
-    options.KnownProxies.Clear();
-});
-// ���ӽ������
-builder.Services.AddHealthChecks();
+
 
 var app = builder.Build();
-app.UseForwardedHeaders();
 
-
-if (app.Environment.IsEnvironment("development"))
+//配置运行端口
+if (app.Environment.IsDevelopment())
 {
     app.Urls.Add("http://localhost:9527");
 }
-else {
-    app.Urls.Add("http://*:9527");
-}
 
+app.Urls.Add("http://*:9527");
 
+//代理头
+app.UseForwardedHeaders();
 
-    //app.UseMiddleware<ExceptionHandlerMiddleware>();
+//静态文件
+app.UseStaticFiles(new StaticFileOptions()
+{
+    FileProvider = new PhysicalFileProvider
+        (Path.Combine(Directory.GetCurrentDirectory(), fileStorageConfig.GetImageDirectory())),
+    RequestPath = $"/{fileStorageConfig.ImagePath}",
+    OnPrepareResponse = ctx => { ctx.Context.Response.Headers.Append("Cache-Control", "public, max-age=86400"); }
+});
 
-    // Configure the HTTP request pipeline.
+//跨域
+app.UseCors("CorsPolicy");
+
+//鉴权
+app.UseAuthentication();
+app.UseAuthorization();
+
+//路由
+app.UseRouting();
+
+//异常中间件
+//app.UseMiddleware<ExceptionHandlerMiddleware>();
+
+// Configure the HTTP request pipeline.
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseKnife4UI(d =>
 {
     d.RoutePrefix = String.Empty;
-    d.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");//Endpoint �ն��м��
-});
-
-
-//���ӿ���
-app.UseCors("CorsPolicy");
-//��Ȩ�м��
-app.UseAuthentication();
-app.UseAuthorization();
-
-//ӳ��ͼƬ�ļ�Ŀ¼
-app.UseStaticFiles(new StaticFileOptions()
-{
-    FileProvider = new PhysicalFileProvider
-    (Path.Combine(Directory.GetCurrentDirectory(), fileStorageConfig.GetImageDirectory())),
-    RequestPath = $"/{fileStorageConfig.ImagePath}",
-    OnPrepareResponse = ctx =>
-    {
-        ctx.Context.Response.Headers.Append("Cache-Control", "public, max-age=86400");
-    }
+    d.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
 });
 
 app.MapControllers();
