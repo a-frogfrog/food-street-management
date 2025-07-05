@@ -31,8 +31,6 @@ coverage/
 /obj/
 # 日志文件
 *.log
-# 本地配置
-appsettings.Development.json
 # 临时文件
 *.tmp
 *.temp
