@@ -1,4 +1,0 @@
-D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Api\wwwroot\images\1742983036106_1011821f633c4298ac9ac23b5fb7b302_2025-06-14-08-43-53.png
-D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Api\wwwroot\images\1742983036106_3275079820c546ae87774916aa7b6045_2025-06-14-08-41-23.png
-D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Api\wwwroot\images\1742983036106_7f0c0bbb18f74516b7ba9217f91887ec_2025-06-14-08-50-23.png
-D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Api\wwwroot\images\1742983036106_ba6c127723a94b0889acf42f7601c3f7_2025-06-14-08-46-08.png

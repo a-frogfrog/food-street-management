@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FSM.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd62eb8aaa91b09e8df49899d4b991da431cdf84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1915ebf1232cfbe4198ca0c9137858d85daf2ea0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FSM.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FSM.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
