@@ -27,8 +27,8 @@ coverage/
 
 # ===== .NET Core 后端项目 =====
 # 构建输出
-bin
-obj
+bin/
+obj/
 # 日志文件
 *.log
 # 临时文件
