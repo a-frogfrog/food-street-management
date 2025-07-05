@@ -248,12 +248,14 @@ app.UseStaticFiles(new StaticFileOptions()
 //跨域
 app.UseCors("CorsPolicy");
 
-//鉴权
-app.UseAuthentication();
-app.UseAuthorization();
 
 //路由
 app.UseRouting();
+
+
+//鉴权
+app.UseAuthentication();
+app.UseAuthorization();
 
 //异常中间件
 //app.UseMiddleware<ExceptionHandlerMiddleware>();

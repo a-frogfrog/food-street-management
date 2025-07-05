@@ -1,0 +1,12 @@
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Service.Background\bin\Release\net6.0\FSM.Service.Background.deps.json
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Service.Background\bin\Release\net6.0\FSM.Service.Background.dll
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Service.Background\bin\Release\net6.0\FSM.Service.Background.pdb
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Service.Background\obj\Release\net6.0\FSM.Service.Background.csproj.AssemblyReference.cache
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Service.Background\obj\Release\net6.0\FSM.Service.Background.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Service.Background\obj\Release\net6.0\FSM.Service.Background.AssemblyInfoInputs.cache
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Service.Background\obj\Release\net6.0\FSM.Service.Background.AssemblyInfo.cs
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Service.Background\obj\Release\net6.0\FSM.Service.Background.csproj.CoreCompileInputs.cache
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Service.Background\obj\Release\net6.0\FSM.Service.Background.dll
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Service.Background\obj\Release\net6.0\refint\FSM.Service.Background.dll
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Service.Background\obj\Release\net6.0\FSM.Service.Background.pdb
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Service.Background\obj\Release\net6.0\ref\FSM.Service.Background.dll

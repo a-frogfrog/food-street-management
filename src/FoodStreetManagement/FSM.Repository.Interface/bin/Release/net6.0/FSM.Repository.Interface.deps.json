@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FSM.Repository.Interface/1.0.0": {
+        "runtime": {
+          "FSM.Repository.Interface.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FSM.Repository.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

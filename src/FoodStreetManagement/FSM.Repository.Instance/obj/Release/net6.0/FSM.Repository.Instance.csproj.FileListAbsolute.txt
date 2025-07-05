@@ -1,0 +1,15 @@
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\bin\Release\net6.0\FSM.Repository.Instance.deps.json
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\bin\Release\net6.0\FSM.Repository.Instance.dll
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\bin\Release\net6.0\FSM.Repository.Instance.pdb
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\bin\Release\net6.0\FSM.Repository.Interface.dll
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\bin\Release\net6.0\FSM.Repository.Interface.pdb
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\obj\Release\net6.0\FSM.Repository.Instance.csproj.AssemblyReference.cache
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\obj\Release\net6.0\FSM.Repository.Instance.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\obj\Release\net6.0\FSM.Repository.Instance.AssemblyInfoInputs.cache
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\obj\Release\net6.0\FSM.Repository.Instance.AssemblyInfo.cs
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\obj\Release\net6.0\FSM.Repository.Instance.csproj.CoreCompileInputs.cache
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\obj\Release\net6.0\FSM.Repo.2E0E8701.Up2Date
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\obj\Release\net6.0\FSM.Repository.Instance.dll
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\obj\Release\net6.0\refint\FSM.Repository.Instance.dll
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\obj\Release\net6.0\FSM.Repository.Instance.pdb
+D:\Study\code\S4\food-street-management\FoodStreetManagement\FSM.Repository.Instance\obj\Release\net6.0\ref\FSM.Repository.Instance.dll

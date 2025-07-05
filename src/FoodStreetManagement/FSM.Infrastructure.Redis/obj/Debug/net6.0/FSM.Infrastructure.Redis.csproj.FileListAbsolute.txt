@@ -1,0 +1,12 @@
+D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Infrastructure.Redis\bin\Debug\net6.0\FSM.Infrastructure.Redis.deps.json
+D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Infrastructure.Redis\bin\Debug\net6.0\FSM.Infrastructure.Redis.dll
+D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Infrastructure.Redis\bin\Debug\net6.0\FSM.Infrastructure.Redis.pdb
+D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Infrastructure.Redis\obj\Debug\net6.0\FSM.Infrastructure.Redis.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Infrastructure.Redis\obj\Debug\net6.0\FSM.Infrastructure.Redis.AssemblyInfoInputs.cache
+D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Infrastructure.Redis\obj\Debug\net6.0\FSM.Infrastructure.Redis.AssemblyInfo.cs
+D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Infrastructure.Redis\obj\Debug\net6.0\FSM.Infrastructure.Redis.csproj.CoreCompileInputs.cache
+D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Infrastructure.Redis\obj\Debug\net6.0\FSM.Infrastructure.Redis.sourcelink.json
+D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Infrastructure.Redis\obj\Debug\net6.0\FSM.Infrastructure.Redis.dll
+D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Infrastructure.Redis\obj\Debug\net6.0\refint\FSM.Infrastructure.Redis.dll
+D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Infrastructure.Redis\obj\Debug\net6.0\FSM.Infrastructure.Redis.pdb
+D:\Study\code\Project\food-street-management\src\FoodStreetManagement\FSM.Infrastructure.Redis\obj\Debug\net6.0\ref\FSM.Infrastructure.Redis.dll

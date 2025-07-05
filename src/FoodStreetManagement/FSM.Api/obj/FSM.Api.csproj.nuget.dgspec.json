@@ -1,0 +1,1102 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api\\FSM.Api.csproj": {}
+  },
+  "projects": {
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api\\FSM.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api\\FSM.Api.csproj",
+        "projectName": "FSM.Api",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api\\FSM.Api.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.MySql\\FSM.Infrastructure.EFCore.MySql.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.MySql\\FSM.Infrastructure.EFCore.MySql.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.SqlServer\\FSM.Infrastructure.EFCore.SqlServer.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.SqlServer\\FSM.Infrastructure.EFCore.SqlServer.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Instance\\FSM.Repository.Instance.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Instance\\FSM.Repository.Instance.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Interface\\FSM.Repository.Interface.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Interface\\FSM.Repository.Interface.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Background\\FSM.Service.Background.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Background\\FSM.Service.Background.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Instance\\FSM.Service.Instance.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Instance\\FSM.Service.Instance.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Interface\\FSM.Service.Interface.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Interface\\FSM.Service.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "IGeekFan.AspNetCore.Knife4jUI": {
+              "target": "Package",
+              "version": "[0.0.16, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Attribute\\FSM.Infrastructure.Attribute.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Attribute\\FSM.Infrastructure.Attribute.csproj",
+        "projectName": "FSM.Infrastructure.Attribute",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Attribute\\FSM.Infrastructure.Attribute.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Attribute\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Dto\\FSM.Infrastructure.Dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Dto\\FSM.Infrastructure.Dto.csproj",
+        "projectName": "FSM.Infrastructure.Dto",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Dto\\FSM.Infrastructure.Dto.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Dto\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Attribute\\FSM.Infrastructure.Attribute.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Attribute\\FSM.Infrastructure.Attribute.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.MySql\\FSM.Infrastructure.EFCore.MySql.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.MySql\\FSM.Infrastructure.EFCore.MySql.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.MySql\\FSM.Infrastructure.EFCore.MySql.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.MySql\\FSM.Infrastructure.EFCore.MySql.csproj",
+        "projectName": "FSM.Infrastructure.EFCore.MySql",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.MySql\\FSM.Infrastructure.EFCore.MySql.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.MySql\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.SqlServer\\FSM.Infrastructure.EFCore.SqlServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.SqlServer\\FSM.Infrastructure.EFCore.SqlServer.csproj",
+        "projectName": "FSM.Infrastructure.EFCore.SqlServer",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.SqlServer\\FSM.Infrastructure.EFCore.SqlServer.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.SqlServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Helpers\\FSM.Infrastructure.Helpers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Helpers\\FSM.Infrastructure.Helpers.csproj",
+        "projectName": "FSM.Infrastructure.Helpers",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Helpers\\FSM.Infrastructure.Helpers.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Helpers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Dto\\FSM.Infrastructure.Dto.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Dto\\FSM.Infrastructure.Dto.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Tools\\FSM.Infrastructure.Tools.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Tools\\FSM.Infrastructure.Tools.csproj",
+        "projectName": "FSM.Infrastructure.Tools",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Tools\\FSM.Infrastructure.Tools.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Tools\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Attribute\\FSM.Infrastructure.Attribute.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Attribute\\FSM.Infrastructure.Attribute.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.12.0, )"
+            },
+            "UAParser": {
+              "target": "Package",
+              "version": "[3.1.47, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.EntityRepositories\\FSM.Repository.EntityRepositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.EntityRepositories\\FSM.Repository.EntityRepositories.csproj",
+        "projectName": "FSM.Repository.EntityRepositories",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.EntityRepositories\\FSM.Repository.EntityRepositories.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.EntityRepositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Helpers\\FSM.Infrastructure.Helpers.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Helpers\\FSM.Infrastructure.Helpers.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Interface\\FSM.Repository.Interface.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Interface\\FSM.Repository.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Instance\\FSM.Repository.Instance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Instance\\FSM.Repository.Instance.csproj",
+        "projectName": "FSM.Repository.Instance",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Instance\\FSM.Repository.Instance.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Instance\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Interface\\FSM.Repository.Interface.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Interface\\FSM.Repository.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Interface\\FSM.Repository.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Interface\\FSM.Repository.Interface.csproj",
+        "projectName": "FSM.Repository.Interface",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Interface\\FSM.Repository.Interface.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Background\\FSM.Service.Background.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Background\\FSM.Service.Background.csproj",
+        "projectName": "FSM.Service.Background",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Background\\FSM.Service.Background.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Background\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Dependencies\\FSM.Service.Dependencies.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Dependencies\\FSM.Service.Dependencies.csproj",
+        "projectName": "FSM.Service.Dependencies",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Dependencies\\FSM.Service.Dependencies.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Dependencies\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Tools\\FSM.Infrastructure.Tools.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Tools\\FSM.Infrastructure.Tools.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.EntityRepositories\\FSM.Repository.EntityRepositories.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Repository.EntityRepositories\\FSM.Repository.EntityRepositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Instance\\FSM.Service.Instance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Instance\\FSM.Service.Instance.csproj",
+        "projectName": "FSM.Service.Instance",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Instance\\FSM.Service.Instance.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Instance\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Attribute\\FSM.Infrastructure.Attribute.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Attribute\\FSM.Infrastructure.Attribute.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Dto\\FSM.Infrastructure.Dto.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Dto\\FSM.Infrastructure.Dto.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.MySql\\FSM.Infrastructure.EFCore.MySql.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.MySql\\FSM.Infrastructure.EFCore.MySql.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Helpers\\FSM.Infrastructure.Helpers.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Helpers\\FSM.Infrastructure.Helpers.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Tools\\FSM.Infrastructure.Tools.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Tools\\FSM.Infrastructure.Tools.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Dependencies\\FSM.Service.Dependencies.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Dependencies\\FSM.Service.Dependencies.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Interface\\FSM.Service.Interface.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Interface\\FSM.Service.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ServiceStack.Redis": {
+              "target": "Package",
+              "version": "[6.11.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Interface\\FSM.Service.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Interface\\FSM.Service.Interface.csproj",
+        "projectName": "FSM.Service.Interface",
+        "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Interface\\FSM.Service.Interface.csproj",
+        "packagesPath": "C:\\Users\\FrogFrog\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Service.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FrogFrog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Attribute\\FSM.Infrastructure.Attribute.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Attribute\\FSM.Infrastructure.Attribute.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Dto\\FSM.Infrastructure.Dto.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Dto\\FSM.Infrastructure.Dto.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.MySql\\FSM.Infrastructure.EFCore.MySql.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.MySql\\FSM.Infrastructure.EFCore.MySql.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.SqlServer\\FSM.Infrastructure.EFCore.SqlServer.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.EFCore.SqlServer\\FSM.Infrastructure.EFCore.SqlServer.csproj"
+              },
+              "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Helpers\\FSM.Infrastructure.Helpers.csproj": {
+                "projectPath": "D:\\Study\\code\\Project\\food-street-management\\src\\FoodStreetManagement\\FSM.Infrastructure.Helpers\\FSM.Infrastructure.Helpers.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

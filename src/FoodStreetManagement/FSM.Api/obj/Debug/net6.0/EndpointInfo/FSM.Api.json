@@ -1,0 +1,449 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Food Street Management Api",
+    "description": "Food Street Management Api",
+    "contact": {
+      "name": "FrogFrog",
+      "email": "a_frogfrog@outlook.com"
+    },
+    "version": "v1.0"
+  },
+  "paths": {
+    "/api/supplier/Auth/Login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/admin/Auth/Login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/admin/Auth/CheckLogin": {
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/admin/MasterData/GetDictionaryList": {
+      "get": {
+        "tags": [
+          "MasterData"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/admin/MasterData/CreateDictionary": {
+      "post": {
+        "tags": [
+          "MasterData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDictonaryRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDictonaryRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDictonaryRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/admin/Permission/GetPermissionList": {
+      "get": {
+        "tags": [
+          "Permission"
+        ],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/admin/Permission/GetUserPermissionMenuList": {
+      "get": {
+        "tags": [
+          "Permission"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/admin/Permission/CreatePermission": {
+      "post": {
+        "tags": [
+          "Permission"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePermissionRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePermissionRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePermissionRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/admin/Permission/GrantPermission": {
+      "post": {
+        "tags": [
+          "Permission"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrantPermissionRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrantPermissionRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrantPermissionRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/admin/Product/GetProductList": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/admin/Upload/UploadFile": {
+      "post": {
+        "tags": [
+          "Upload"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ContentType": {
+                    "type": "string"
+                  },
+                  "ContentDisposition": {
+                    "type": "string"
+                  },
+                  "Headers": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "Length": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Name": {
+                    "type": "string"
+                  },
+                  "FileName": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "ContentType": {
+                  "style": "form"
+                },
+                "ContentDisposition": {
+                  "style": "form"
+                },
+                "Headers": {
+                  "style": "form"
+                },
+                "Length": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "FileName": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateDictonaryRequestDto": {
+        "required": [
+          "code",
+          "isNode",
+          "name",
+          "value"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "description": "Dictionary Name.\r\n字典名称"
+          },
+          "value": {
+            "maxLength": 256,
+            "minLength": 0,
+            "type": "string",
+            "description": "Dictionary Value.\r\n字典值"
+          },
+          "code": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "description": "Dictionary Code.\r\n字典编码"
+          },
+          "parentId": {
+            "maxLength": 32,
+            "minLength": 0,
+            "type": "string",
+            "description": "Dictionary Parent Id.\r\n字典父级ID",
+            "nullable": true
+          },
+          "isNode": {
+            "type": "integer",
+            "description": "Dictionary Is Node.\r\n是否为节点",
+            "format": "int32"
+          },
+          "description": {
+            "maxLength": 999,
+            "minLength": 0,
+            "type": "string",
+            "description": "Dictionary Description.\r\n字典描述",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Create Dictonary Request DTO.\r\n创建字典请求DTO"
+      },
+      "CreatePermissionRequestDto": {
+        "required": [
+          "name",
+          "type",
+          "url"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "minLength": 1,
+            "type": "string",
+            "description": "权限名称."
+          },
+          "url": {
+            "minLength": 1,
+            "type": "string",
+            "description": "权限标识."
+          },
+          "type": {
+            "type": "integer",
+            "description": "权限类型 /是否为菜单.",
+            "format": "int32"
+          },
+          "icon": {
+            "type": "string",
+            "description": "权限图标.",
+            "nullable": true
+          },
+          "parentId": {
+            "type": "string",
+            "description": "权限父级Id.",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "description": "权限描述.",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Create Permission Request Dto.\r\n创建权限请求Dto."
+      },
+      "GrantPermissionRequestDto": {
+        "required": [
+          "permissions",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "userId": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string",
+            "description": "用户ID."
+          },
+          "permissions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "权限集合."
+          }
+        },
+        "additionalProperties": false,
+        "description": "Grant Permission Request Dto.\r\n授权请求Dto."
+      },
+      "LoginRequestDto": {
+        "required": [
+          "account",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "account": {
+            "maxLength": 11,
+            "minLength": 11,
+            "type": "string",
+            "description": "账号"
+          },
+          "password": {
+            "maxLength": 32,
+            "minLength": 6,
+            "type": "string",
+            "description": "密码",
+            "format": "password"
+          },
+          "payload": {
+            "type": "string",
+            "description": "验证",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "登录请求 DTO"
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT��Ȩ(���ݽ�������ͷ�н��д���) ֱ�����¿�������Bearer {token}��ע������֮����һ���ո�,��ȷ��ʽΪ Bearer+�ո�+Token��\"",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

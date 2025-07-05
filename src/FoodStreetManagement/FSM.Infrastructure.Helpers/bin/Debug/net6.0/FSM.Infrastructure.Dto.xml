@@ -1,0 +1,648 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FSM.Infrastructure.Dto</name>
+    </assembly>
+    <members>
+        <member name="T:FSM.Infrastructure.Dto.Api.Request.Admin.Dictionary.CreateDictonaryRequestDto">
+            <summary>
+            Create Dictonary Request DTO.
+            创建字典请求DTO
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Dictionary.CreateDictonaryRequestDto.Name">
+            <summary>
+            Dictionary Name.
+            字典名称
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Dictionary.CreateDictonaryRequestDto.Value">
+            <summary>
+            Dictionary Value.
+            字典值
+            </summary>      
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Dictionary.CreateDictonaryRequestDto.Code">
+            <summary>
+            Dictionary Code.
+            字典编码
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Dictionary.CreateDictonaryRequestDto.ParentId">
+            <summary>
+            Dictionary Parent Id.
+            字典父级ID
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Dictionary.CreateDictonaryRequestDto.IsNode">
+            <summary>
+            Dictionary Is Node.
+            是否为节点
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Dictionary.CreateDictonaryRequestDto.Description">
+            <summary>
+            Dictionary Description.
+            字典描述
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Api.Request.Admin.Login.LoginRequestDto">
+            <summary>
+            登录请求 DTO
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Login.LoginRequestDto.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Login.LoginRequestDto.Password">
+            <summary>
+            密码 
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Login.LoginRequestDto.Payload">
+            <summary>
+            验证
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Api.Request.Admin.Permission.CreatePermissionRequestDto">
+            <summary>
+            Create Permission Request Dto.
+            创建权限请求Dto.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Permission.CreatePermissionRequestDto.Name">
+            <summary>
+            权限名称.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Permission.CreatePermissionRequestDto.Url">
+            <summary>
+            权限标识.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Permission.CreatePermissionRequestDto.Type">
+            <summary>
+            权限类型 /是否为菜单.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Permission.CreatePermissionRequestDto.Icon">
+            <summary>
+            权限图标.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Permission.CreatePermissionRequestDto.ParentId">
+            <summary>
+            权限父级Id.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Permission.CreatePermissionRequestDto.Description">
+            <summary>
+            权限描述.
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Api.Request.Admin.Permission.GrantPermissionRequestDto">
+            <summary>
+            Grant Permission Request Dto.
+            授权请求Dto.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Permission.GrantPermissionRequestDto.UserId">
+            <summary>
+            用户ID.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Permission.GrantPermissionRequestDto.Permissions">
+            <summary>
+            权限集合.
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Api.Request.Admin.Product.GetProductRequestDto">
+            <summary>
+            Get Product Request DTO.
+            获取商品请求DTO
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Product.GetProductRequestDto.Page">
+            <summary>
+            分页 page
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Product.GetProductRequestDto.PageSize">
+            <summary>
+            分页 size
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Request.Admin.Product.GetProductRequestDto.Name">
+            <summary>
+            商品名称 Name
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Api.Response.Admin.Login.LoginResponseDto">
+            <summary>
+            登录响应 DTO
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Login.LoginResponseDto.SessionId">
+            <summary>
+            sessionId
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Login.LoginResponseDto.Token">
+            <summary>
+            凭据
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto">
+            <summary>
+            Get Dictionary Response DTO.
+            获取字典响应DTO
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.Id">
+            <summary>
+            Dictionary Id.
+            字典ID
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.Name">
+            <summary>
+            Dictionary Name.
+            字典名称
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.Value">
+            <summary>
+            Dictionary Value.
+            字典值
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.Code">
+            <summary>
+            Dictionary Code.
+            字典编码
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.SerialNumber">
+            <summary>
+            Dictionary Serial Number.
+            字典序号
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.ParentId">
+            <summary>
+            Dictionary Parent Id.
+            字典父级ID
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.Level">
+            <summary>
+            Dictionary Level.
+            字典层级
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.IsNode">
+            <summary>
+            Dictionary Is Node.
+            是否为节点
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.Status">
+            <summary>
+            Dictionary Status.
+            字典状态
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.UpdateTime">
+            <summary>
+            Dictionary Update Time.
+            字典更新时间
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.CreateTime">
+            <summary>
+            Dictionary Create Time.
+            字典创建时间
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.Description">
+            <summary>
+            Dictionary Description.
+            字典描述
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.MasterData.GetDictionaryResponseDto.Children">
+            <summary>
+            Dictionary Children.
+            字典子项
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionMenuResponseDto">
+            <summary>
+            Get Permission Menu Response Dto.
+            获取权限菜单响应Dto.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionMenuResponseDto.Id">
+            <summary>
+            权限ID.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionMenuResponseDto.Name">
+            <summary>
+            权限名称.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionMenuResponseDto.Url">
+            <summary>
+            权限
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionMenuResponseDto.Icon">
+            <summary>
+            权限图标
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionMenuResponseDto.ParentId">
+            <summary>
+             父级权限ID
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionMenuResponseDto.Children">
+            <summary>
+            子级权限
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionResponseDto">
+            <summary>
+            Get Permission Response Dto.
+            获取权限响应数据传输对象
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionResponseDto.Id">
+            <summary>
+            ID.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionResponseDto.Name">
+            <summary>
+            权限名称
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionResponseDto.Url">
+            <summary>
+            权限URL
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionResponseDto.SerialNumber">
+            <summary>
+            权限排序
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionResponseDto.Type">
+            <summary>
+            权限类型
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionResponseDto.Status">
+            <summary>
+            权限状态
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionResponseDto.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionResponseDto.ParentId">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionResponseDto.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionResponseDto.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Permission.GetPermissionResponseDto.Children">
+            <summary>
+            子级权限
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Api.Response.Admin.Upload.SingleFileUploadResponseDto">
+            <summary>
+            Uploaded single file response DTO.
+            单个上传文件响应DTO
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Upload.SingleFileUploadResponseDto.FileName">
+            <summary>
+            File name.
+            文件名
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Upload.SingleFileUploadResponseDto.FileSize">
+            <summary>
+            File size.
+            文件大小
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Upload.SingleFileUploadResponseDto.FileType">
+            <summary>
+            File type.
+            文件类型
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Api.Response.Admin.Upload.SingleFileUploadResponseDto.FileUrl">
+            <summary>
+            File URL.
+            文件URL
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Common.ApiResponse`1">
+            <summary>
+            接口响应类型 泛型
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Common.ApiResponse`1.Code">
+            <summary>
+            接口响应类型
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Common.ApiResponse`1.Message">
+            <summary>
+            接口响应消息
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Common.ApiResponse`1.Data">
+            <summary>
+            接口响应数据
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Common.ApiResponse">
+            <summary>
+            接口响应类型
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Common.ApiResponseCode">
+            <summary>
+            API Response Code
+            接口响应码
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Common.ApiResponseCode.Ok">
+            <summary>
+            Success
+            成功
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Common.ApiResponseCode.Failed">
+            <summary>
+            Failed
+            失败
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Common.ApiResponseCode.Error">
+            <summary>
+            Exception
+            异常
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Common.ApiResponseCode.Unauthorized">
+            <summary>
+            Unauthorized
+            未授权
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Common.ApiResponseCode.Forbidden">
+            <summary>
+            Forbidden
+            拒绝访问
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Common.ApiRoles">
+            <summary>
+            ApiRoles
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Common.ApiRoles.Admin">
+            <summary>
+            The constant admin.
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Common.ApiRoles.Mobile">
+            <summary>
+            The constant user.
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Common.Config">
+            <summary>
+            Config
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Service.Log.Error.CreateErrorDto">
+            <summary>
+            This class is used to create a error log
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Error.CreateErrorDto.ErrorCode">
+            <summary>
+            错误代码
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Error.CreateErrorDto.ErrorMessage">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Error.CreateErrorDto.ErrorType">
+            <summary>
+            错误类型
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Error.CreateErrorDto.HttpStatusCode">
+            <summary>
+            HTTP状态码 可为空
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Error.CreateErrorDto.StackTrace">
+            <summary>
+            错误堆栈
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Service.Log.Operation.CreateOperationDto">
+            <summary>
+            创建操作日志
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Operation.CreateOperationDto.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Operation.CreateOperationDto.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Operation.CreateOperationDto.Module">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Operation.CreateOperationDto.Action">
+            <summary>
+            操作行为
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Operation.CreateOperationDto.OperationType">
+            <summary>
+            操作类型
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Operation.CreateOperationDto.Parameters">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Operation.CreateOperationDto.Method">
+            <summary>
+            请求方法
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Log.Operation.CreateOperationDto.Status">
+            <summary>
+            操作状态
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Service.Permission.CheckUserPermissionDto">
+            <summary>
+            Check User Permission Dto.
+            检查用户权限Dto.
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Permission.CheckUserPermissionDto.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.Permission.CheckUserPermissionDto.Permissions">
+            <summary>
+            权限
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Service.Status.LoginStatus">
+            <summary>
+            登录状态
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Service.Status.LoginStatus.Success">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Service.Status.LoginStatus.PasswordError">
+            <summary>
+            密码错误
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Service.Status.LoginStatus.Logout">
+            <summary>
+            注销
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Service.Status.PermissionStatus">
+            <summary>
+            Permission Status
+            权限状态
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Service.Status.PermissionStatus.Active">
+            <summary>
+            正常
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Service.Status.PermissionStatus.Banned">
+            <summary>
+            禁用
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Service.Status.UserStatus">
+            <summary>
+            用户状态
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Service.Status.UserStatus.Inactive">
+            <summary>
+            未激活
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Service.Status.UserStatus.Active">
+            <summary>
+            激活
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Service.Status.UserStatus.Banned">
+            <summary>
+            封禁
+            </summary>
+        </member>
+        <member name="F:FSM.Infrastructure.Dto.Service.Status.UserStatus.Deleted">
+            <summary>
+            已删除
+            </summary>
+        </member>
+        <member name="T:FSM.Infrastructure.Dto.Service.User.GetUserInfoDto">
+            <summary>
+            服务层获取用户信息Dto
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.User.GetUserInfoDto.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.User.GetUserInfoDto.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.User.GetUserInfoDto.Account">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.User.GetUserInfoDto.PasswordHash">
+            <summary>
+            用户密码
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.User.GetUserInfoDto.PasswordSalt">
+            <summary>
+            用户密码盐
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.User.GetUserInfoDto.Status">
+            <summary>
+            用户状态
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.User.GetUserInfoDto.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:FSM.Infrastructure.Dto.Service.User.GetUserInfoDto.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+    </members>
+</doc>

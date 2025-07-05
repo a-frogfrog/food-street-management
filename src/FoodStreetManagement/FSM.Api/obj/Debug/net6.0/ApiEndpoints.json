@@ -1,0 +1,173 @@
+[
+  {
+    "ContainingType": "FSM.Api.Controllers.Admin.AuthController",
+    "Method": "CheckLogin",
+    "RelativePath": "api/admin/Auth/CheckLogin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FSM.Api.Controllers.Admin.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/admin/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "FSM.Infrastructure.Dto.Api.Request.Admin.Login.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FSM.Api.Controllers.Admin.MasterDataController",
+    "Method": "CreateDictionary",
+    "RelativePath": "api/admin/MasterData/CreateDictionary",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "FSM.Infrastructure.Dto.Api.Request.Admin.Dictionary.CreateDictonaryRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FSM.Api.Controllers.Admin.MasterDataController",
+    "Method": "GetDictionaryList",
+    "RelativePath": "api/admin/MasterData/GetDictionaryList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FSM.Api.Controllers.Admin.PermissionController",
+    "Method": "CreatePermission",
+    "RelativePath": "api/admin/Permission/CreatePermission",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "permissionDto",
+        "Type": "FSM.Infrastructure.Dto.Api.Request.Admin.Permission.CreatePermissionRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FSM.Api.Controllers.Admin.PermissionController",
+    "Method": "GetPermissionList",
+    "RelativePath": "api/admin/Permission/GetPermissionList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FSM.Api.Controllers.Admin.PermissionController",
+    "Method": "GetUserPermissionMenuList",
+    "RelativePath": "api/admin/Permission/GetUserPermissionMenuList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FSM.Api.Controllers.Admin.PermissionController",
+    "Method": "GrantPermission",
+    "RelativePath": "api/admin/Permission/GrantPermission",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "FSM.Infrastructure.Dto.Api.Request.Admin.Permission.GrantPermissionRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FSM.Api.Controllers.Admin.ProductController",
+    "Method": "GetProductList",
+    "RelativePath": "api/admin/Product/GetProductList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FSM.Api.Controllers.Admin.UploadController",
+    "Method": "UploadFile",
+    "RelativePath": "api/admin/Upload/UploadFile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FSM.Api.Controllers.Supplier.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/supplier/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
