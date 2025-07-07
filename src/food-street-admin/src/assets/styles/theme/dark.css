@@ -1,0 +1,10 @@
+html[data-theme="dark"] {
+  --bg-primary: #1C1E23;
+  --bg-secondary: #14161a;
+
+  --text-primary: oklch(87.2% 0.01 258.338);
+
+  --border-color: #424242;
+
+  --bg-hover-primary: #111a2c;
+}
