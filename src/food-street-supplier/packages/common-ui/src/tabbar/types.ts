@@ -1,5 +1,15 @@
 import type { Component } from 'vue';
 
+
+
+export interface TabBarProps {
+  /**
+   * The items to display in the tab bar.
+   */  
+  items: TabBarItemProps[];
+}
+
+
 export interface TabBarItemProps {
   /**
    * The icon to display in the tab bar item.
