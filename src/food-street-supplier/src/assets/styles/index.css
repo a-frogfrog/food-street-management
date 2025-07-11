@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+
+.font-smiley {
+  font-family: 'Smiley Sans', cursive;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+
+* {
+  font-family: 'Inter', sans-serif;
+}

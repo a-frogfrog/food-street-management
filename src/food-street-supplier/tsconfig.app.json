@@ -7,14 +7,16 @@
         "strict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "erasableSyntaxOnly": true,
+        // "erasableSyntaxOnly": true,
         "noFallthroughCasesInSwitch": true,
         "noUncheckedSideEffectImports": true,
 
-        "baseUrl": "./",
+        "baseUrl": ".",
         "paths": {
             "@/*": ["src/*"],
-            "@frog/layouts/*": ["packages/layouts/*"]
+            "@frog/layouts": ["packages/layouts"],
+            "@frog/styles": ["packages/styles"],
+            "@frog/common-ui": ["packages/common-ui"],
         }
     },
     "include": [
