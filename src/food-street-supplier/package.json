@@ -27,6 +27,7 @@
     "prettier": "^3.6.2",
     "typescript": "~5.8.3",
     "vite": "^7.0.0",
+    "vite-plugin-inspect": "^11.3.0",
     "vue-tsc": "^2.2.10"
   }
 }

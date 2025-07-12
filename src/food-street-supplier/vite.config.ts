@@ -1,14 +1,15 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import { resolve } from 'path'; // 新增的导入语句
+import { resolve } from 'path';
 import tailwindcss from '@tailwindcss/vite';
+import Inspect from 'vite-plugin-inspect'
 
 // https://vite.dev/config/
 export default defineConfig({
   server: {
     host: true,
   },
-  plugins: [vue(), tailwindcss()],
+  plugins: [vue(), tailwindcss(),Inspect()],
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),

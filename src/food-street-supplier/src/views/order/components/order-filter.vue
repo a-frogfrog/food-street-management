@@ -1,44 +1,99 @@
 <script setup lang="ts">
-const current = defineModel();
+import { useScrollShadow } from './use-scroll-shadow';
 
+const current = defineModel<number>();
 defineProps({
   total: {
     type: Number,
     default: 0,
   },
   options: {
-    type: Array<{ label: string; value: number }>,
+    type: Array<{ label: string; value: number; icon?: string }>,
     default: () => [],
   },
 });
-
 defineEmits<{
   (e: 'selectChange', value: number): void;
 }>();
+
+function useClassNames() {
+  const classNames = {
+    filter: [
+      'order-filter',
+      'sticky',
+      'top-0',
+      'bg-white',
+      'z-10',
+      '!pt-3',
+      'transition-all',
+      'duration-200',
+    ],
+    filterShadow: ['shadow-lg', 'rounded-b-2xl'],
+    filterContent: [
+      'flex',
+      'justify-between',
+      'items-center',
+      '!px-4',
+      '!py-2',
+    ],
+    filerItem: [
+      'bg-[#F3F0F3]',
+      '!px-2',
+      '!py-1',
+      'rounded-4xl',
+      'border',
+      'border-gray-200',
+      'text-gray-500',
+      'text-lg',
+      'font-inter',
+    ],
+    filterFooter: ['!px-4', '!py-2', 'flex', 'justify-between', 'items-center'],
+    filterReset: [
+      'bg-[#F3F0F3]',
+      '!px-2',
+      'rounded-4xl',
+      'border',
+      'border-gray-200',
+      'text-gray-500',
+      'text-base',
+      'font-inter',
+    ],
+  };
+
+  return {
+    classNames,
+  };
+}
+
+const { classNames } = useClassNames();
+const { isShadow } = useScrollShadow('.content-box', '.order-filter');
+
+function getShadow() {
+  return isShadow.value ? 'shadow-lg rounded-b-2xl' : '';
+}
+function isActive(value: number) {
+  return value === current.value && 'is-active';
+}
 </script>
 <template>
-  <div class="order-filter">
-    <div class="flex justify-between items-center !px-4 !py-2">
+  <div :class="[getShadow(), classNames.filter]">
+    <div :class="classNames.filterContent">
       <template v-for="item in options" :key="item.value">
         <div
-          :class="[item.value === current ? 'is-active' : '']"
-          class="bg-[#F3F0F3] !px-2 !py-1 rounded-4xl border border-gray-200 text-gray-500 text-lg font-inter"
+          :class="[isActive(item.value), classNames.filerItem]"
           @click="$emit('selectChange', item.value)"
         >
-          <i class="iconfont icon-baoqian !px-1"></i>
+          <i class="!px-1" :class="item.icon"></i>
           <span>{{ item.label }}</span>
         </div>
       </template>
     </div>
-    <div class="!px-4 flex justify-between items-center !py-2">
+    <div :class="classNames.filterFooter">
       <div>
         <span>{{ total }} 条结果</span>
       </div>
       <div>
-        <span
-          class="bg-[#F3F0F3] !px-2 rounded-4xl border border-gray-200 text-gray-500 text-base font-inter"
-          >重置</span
-        >
+        <span :class="classNames.filterReset">重置</span>
       </div>
     </div>
   </div>

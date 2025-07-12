@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import type { TabBarProps } from './types';
+import type { TabBarEmits, TabBarProps } from './types';
+import { useTabBar } from './use-tabbar';
 
-const model = defineModel({
+const active = defineModel('active', {
   type: String,
   required: true,
 });
 
 const props = defineProps<TabBarProps>();
+const emit = defineEmits<TabBarEmits>();
 
-defineEmits<{
-  (e: 'tabBarItemClick', name: string): void;
-}>();
+const { goToPage } = useTabBar();
 </script>
 
 <template>
@@ -19,13 +19,20 @@ defineEmits<{
       <template v-for="item in props.items" :key="item.name">
         <div
           class="tabbar-item"
-          :class="[model === item.name ? 'is-active' : '']"
-          @click="$emit('tabBarItemClick', item.name)"
+          :class="[active === item.name ? 'is-active' : '']"
+          @click="(emit('tabBarItemClick', item.name), goToPage(item.name))"
         >
-          <div class="tabbar-item-content">
-            <i class="icon" :class="item.icon"></i>
-            <span>{{ item.label }}</span>
-          </div>
+          <template v-if="item.cover">
+            <div class="tabbar-cover">
+              <img :src="item.cover" alt="" />
+            </div>
+          </template>
+          <template v-else>
+            <div class="tabbar-item-content">
+              <i class="icon" :class="item.icon"></i>
+              <!-- <span>{{ item.label }}</span> -->
+            </div>
+          </template>
         </div>
       </template>
     </div>
@@ -49,17 +56,22 @@ defineEmits<{
   height: 100%;
   display: flex;
   justify-content: space-around;
+  padding: 10px;
 }
 
 .tabbar-item {
-  padding: 10px;
-  border-radius: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out,
+    filter 0.3s ease-in-out;
 }
 
 .is-active {
-  /* background-color: #00890e; */
   color: #45a0b6;
-  /* filter: drop-shadow(0 0 0.75rem #45a0b6); */
+  filter: drop-shadow(0 0 0.75rem #45a0b6);
 }
 
 .tabbar-item-content {
@@ -71,5 +83,27 @@ defineEmits<{
 
 .icon {
   font-size: 24px;
+}
+
+.tabbar-cover {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out,
+    filter 0.3s ease-in-out;
+}
+
+.tabbar-cover img {
+  width: 33px;
+  height: 33px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
 }
 </style>
