@@ -27,6 +27,7 @@ export function useScrollShadow(
   onMounted(() => {
     scrollElement.value = document.querySelector(scrollSelector);
     shadowElement.value = document.querySelector(shadowSelector);
+
     scrollElement.value?.addEventListener('scroll', handleScroll);
   });
   onBeforeMount(() => {

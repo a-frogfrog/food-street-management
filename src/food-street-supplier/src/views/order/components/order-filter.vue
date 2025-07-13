@@ -37,13 +37,10 @@ function useClassNames() {
       '!py-2',
     ],
     filerItem: [
-      'bg-[#F3F0F3]',
       '!px-2',
       '!py-1',
       'rounded-4xl',
-      'border',
-      'border-gray-200',
-      'text-gray-500',
+      'text-gray-400',
       'text-lg',
       'font-inter',
     ],
@@ -102,6 +99,17 @@ function isActive(value: number) {
 <style scoped>
 .is-active {
   color: #000;
-  border: 1px solid #c0bfc0;
+  position: relative;
+}
+
+.is-active::before {
+  content: '';
+  width: 40px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(60%);
 }
 </style>
