@@ -29,7 +29,7 @@ namespace FSM.Service.Instance
             var ipAddress = _httpContextUtils.GetIpAddress();
             var location = await _httpContextUtils.GetLocation(ipAddress);
 
-            var log = new Loginlog()
+            var log = new LoginLog()
             {
                 LogId = _guidGenerator.GenerateSequentialGuid(),
                 UserId = dto.UserId,
@@ -54,7 +54,7 @@ namespace FSM.Service.Instance
         public async Task WriteErrorLog(CreateErrorDto dto)
         {
             //TODO:add error log
-            var log = new Errorlog()
+            var log = new ErrorLog()
             {
                 LogId = _guidGenerator.GenerateSequentialGuid(),
                 ErrorCode = dto.ErrorCode,
@@ -72,7 +72,7 @@ namespace FSM.Service.Instance
         public async Task WriteOperationLog(CreateOperationDto dto)
         {
             //TODO:add operation log
-            var log = new Operationlog()
+            var log = new OperationLog()
             {
                 LogId = _guidGenerator.GenerateSequentialGuid(),
                 UserId = dto.UserId,

@@ -6,7 +6,7 @@ namespace FSM.Infrastructure.EFCore.MySql.Models
     /// <summary>
     /// 供应商登录日志表
     /// </summary>
-    public partial class Supplierloginlog
+    public partial class SupplierLoginLog
     {
         /// <summary>
         /// 日志ID

@@ -17,15 +17,25 @@ namespace FSM.Infrastructure.EFCore.MySql.Models
         }
 
         public virtual DbSet<Dictionary> Dictionaries { get; set; } = null!;
-        public virtual DbSet<Errorlog> Errorlogs { get; set; } = null!;
-        public virtual DbSet<Loginlog> Loginlogs { get; set; } = null!;
-        public virtual DbSet<Operationlog> Operationlogs { get; set; } = null!;
+        public virtual DbSet<ErrorLog> ErrorLogs { get; set; } = null!;
+        public virtual DbSet<LoginLog> LoginLogs { get; set; } = null!;
+        public virtual DbSet<Merchant> Merchants { get; set; } = null!;
+        public virtual DbSet<MerchantLoginLog> MerchantLoginLogs { get; set; } = null!;
+        public virtual DbSet<OperationLog> OperationLogs { get; set; } = null!;
         public virtual DbSet<Permission> Permissions { get; set; } = null!;
         public virtual DbSet<Product> Products { get; set; } = null!;
         public virtual DbSet<Supplier> Suppliers { get; set; } = null!;
-        public virtual DbSet<Supplierloginlog> Supplierloginlogs { get; set; } = null!;
+        public virtual DbSet<SupplierLoginLog> SupplierLoginLogs { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
-        public virtual DbSet<Userpermission> Userpermissions { get; set; } = null!;
+        public virtual DbSet<UserPermission> UserPermissions { get; set; } = null!;
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseMySql("name=ConnectionStrings:MySQL", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.40-mysql"));
+            }
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -101,12 +111,14 @@ namespace FSM.Infrastructure.EFCore.MySql.Models
                     .HasComment("修改时间");
             });
 
-            modelBuilder.Entity<Errorlog>(entity =>
+            modelBuilder.Entity<ErrorLog>(entity =>
             {
                 entity.HasKey(e => e.LogId)
                     .HasName("PRIMARY");
 
-                entity.ToTable("errorlogs");
+                entity.ToTable("error_logs");
+
+                entity.HasComment("错误日志表");
 
                 entity.Property(e => e.LogId)
                     .HasMaxLength(32)
@@ -143,12 +155,14 @@ namespace FSM.Infrastructure.EFCore.MySql.Models
                     .HasComment("堆栈信息");
             });
 
-            modelBuilder.Entity<Loginlog>(entity =>
+            modelBuilder.Entity<LoginLog>(entity =>
             {
                 entity.HasKey(e => e.LogId)
                     .HasName("PRIMARY");
 
-                entity.ToTable("loginlogs");
+                entity.ToTable("login_logs");
+
+                entity.HasComment("管理员登录日志表");
 
                 entity.Property(e => e.LogId)
                     .HasMaxLength(32)
@@ -215,12 +229,157 @@ namespace FSM.Infrastructure.EFCore.MySql.Models
                     .HasComment("用户名称");
             });
 
-            modelBuilder.Entity<Operationlog>(entity =>
+            modelBuilder.Entity<Merchant>(entity =>
+            {
+                entity.HasKey(e => e.MerchId)
+                    .HasName("PRIMARY");
+
+                entity.ToTable("merchants");
+
+                entity.HasComment("商户表");
+
+                entity.Property(e => e.MerchId)
+                    .HasMaxLength(32)
+                    .HasColumnName("merchId")
+                    .HasComment("商户ID");
+
+                entity.Property(e => e.Account)
+                    .HasMaxLength(11)
+                    .HasColumnName("account")
+                    .HasComment("账号");
+
+                entity.Property(e => e.BusinessLicense)
+                    .HasMaxLength(100)
+                    .HasColumnName("businessLicense")
+                    .HasComment("营业执照编号");
+
+                entity.Property(e => e.Contacts)
+                    .HasMaxLength(32)
+                    .HasColumnName("contacts")
+                    .HasComment("联系人");
+
+                entity.Property(e => e.CreateTime)
+                    .HasColumnType("datetime")
+                    .HasColumnName("createTime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.Description)
+                    .HasMaxLength(999)
+                    .HasColumnName("description")
+                    .HasComment("备注");
+
+                entity.Property(e => e.MerchName)
+                    .HasMaxLength(50)
+                    .HasColumnName("merchName")
+                    .HasComment("商户名称");
+
+                entity.Property(e => e.MerchType)
+                    .HasMaxLength(32)
+                    .HasColumnName("merchType")
+                    .HasComment("商户类型");
+
+                entity.Property(e => e.PasswordHash)
+                    .HasMaxLength(32)
+                    .HasColumnName("passwordHash")
+                    .HasComment("密码哈希值");
+
+                entity.Property(e => e.PasswordSalt)
+                    .HasMaxLength(32)
+                    .HasColumnName("passwordSalt")
+                    .HasComment("密码盐值");
+
+                entity.Property(e => e.Status)
+                    .HasColumnName("status")
+                    .HasComment("状态");
+
+                entity.Property(e => e.UpdateTime)
+                    .HasColumnType("datetime")
+                    .HasColumnName("updateTime")
+                    .HasComment("修改时间");
+            });
+
+            modelBuilder.Entity<MerchantLoginLog>(entity =>
             {
                 entity.HasKey(e => e.LogId)
                     .HasName("PRIMARY");
 
-                entity.ToTable("operationlogs");
+                entity.ToTable("merchant_login_logs");
+
+                entity.HasComment("商户登录日志表");
+
+                entity.Property(e => e.LogId)
+                    .HasMaxLength(32)
+                    .HasColumnName("logId")
+                    .HasComment("日志ID");
+
+                entity.Property(e => e.CreateTime)
+                    .HasColumnType("datetime")
+                    .HasColumnName("createTime")
+                    .HasComment("创建时间");
+
+                entity.Property(e => e.ErrorMessage)
+                    .HasColumnType("text")
+                    .HasColumnName("errorMessage")
+                    .HasComment("错误信息");
+
+                entity.Property(e => e.IpAddress)
+                    .HasMaxLength(50)
+                    .HasColumnName("ipAddress")
+                    .HasComment("IP地址");
+
+                entity.Property(e => e.Location)
+                    .HasColumnType("text")
+                    .HasColumnName("location")
+                    .HasComment("IP地址转换为实际地址");
+
+                entity.Property(e => e.LoginTime)
+                    .HasColumnType("datetime")
+                    .HasColumnName("loginTime")
+                    .HasComment("登录时间");
+
+                entity.Property(e => e.LoginType)
+                    .HasMaxLength(50)
+                    .HasColumnName("loginType")
+                    .HasComment("登录类型");
+
+                entity.Property(e => e.MerchId)
+                    .HasMaxLength(32)
+                    .HasColumnName("merchId")
+                    .HasComment("商户ID");
+
+                entity.Property(e => e.MerchName)
+                    .HasMaxLength(50)
+                    .HasColumnName("merchName")
+                    .HasComment("商户名称");
+
+                entity.Property(e => e.SessionId)
+                    .HasMaxLength(32)
+                    .HasColumnName("sessionId")
+                    .HasComment("会话ID");
+
+                entity.Property(e => e.Source)
+                    .HasMaxLength(20)
+                    .HasColumnName("source")
+                    .HasComment("登录来源（PC端，移动端等）");
+
+                entity.Property(e => e.Status)
+                    .HasColumnName("status")
+                    .HasComment("状态（是否成功）");
+
+                entity.Property(e => e.UserAgent)
+                    .HasColumnType("text")
+                    .HasColumnName("userAgent")
+                    .HasComment("用户设备信息");
+            });
+
+            modelBuilder.Entity<OperationLog>(entity =>
+            {
+                entity.HasKey(e => e.LogId)
+                    .HasName("PRIMARY");
+
+                entity.ToTable("operation_logs");
+
+                entity.HasComment("操作日志表");
 
                 entity.Property(e => e.LogId)
                     .HasMaxLength(32)
@@ -468,12 +627,12 @@ namespace FSM.Infrastructure.EFCore.MySql.Models
                     .HasComment("修改时间");
             });
 
-            modelBuilder.Entity<Supplierloginlog>(entity =>
+            modelBuilder.Entity<SupplierLoginLog>(entity =>
             {
                 entity.HasKey(e => e.LogId)
                     .HasName("PRIMARY");
 
-                entity.ToTable("supplierloginlogs");
+                entity.ToTable("supplier_login_logs");
 
                 entity.HasComment("供应商登录日志表");
 
@@ -548,6 +707,8 @@ namespace FSM.Infrastructure.EFCore.MySql.Models
             {
                 entity.ToTable("users");
 
+                entity.HasComment("管理员表");
+
                 entity.HasIndex(e => e.Account, "UQ_Users_account")
                     .IsUnique();
 
@@ -594,12 +755,12 @@ namespace FSM.Infrastructure.EFCore.MySql.Models
                     .HasComment("用户名称");
             });
 
-            modelBuilder.Entity<Userpermission>(entity =>
+            modelBuilder.Entity<UserPermission>(entity =>
             {
                 entity.HasKey(e => e.UserPermId)
                     .HasName("PRIMARY");
 
-                entity.ToTable("userpermissions");
+                entity.ToTable("user_permissions");
 
                 entity.HasComment("用户权限表");
 

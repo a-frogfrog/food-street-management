@@ -3,7 +3,10 @@ using System.Collections.Generic;
 
 namespace FSM.Infrastructure.EFCore.MySql.Models
 {
-    public partial class Operationlog
+    /// <summary>
+    /// 操作日志表
+    /// </summary>
+    public partial class OperationLog
     {
         /// <summary>
         /// 日志ID

@@ -1,5 +1,6 @@
 using FSM.Api.Configs;
 using FSM.Api.Filters;
+using FSM.Api.MiddleWares;
 using FSM.Api.Options;
 using FSM.Api.utils;
 using FSM.Repository.Instance;
@@ -262,7 +263,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 //异常中间件
-//app.UseMiddleware<ExceptionHandlerMiddleware>();
+app.UseMiddleware<ExceptionHandlerMiddleware>();
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();

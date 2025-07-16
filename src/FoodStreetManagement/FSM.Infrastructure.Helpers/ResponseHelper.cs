@@ -90,6 +90,7 @@ namespace FSM.Infrastructure.Helpers
 
         /// <summary>
         /// Error.
+        /// 服务器内部错误
         /// </summary>
         /// <param name="message"></param>
         /// <returns></returns>
@@ -99,6 +100,22 @@ namespace FSM.Infrastructure.Helpers
             {
                 Code = ApiResponseCode.Error,
                 Message = string.IsNullOrEmpty(message) ? "Error" : message
+            };
+        }
+
+
+        /// <summary>
+        /// BadRequest.
+        /// 请求错误
+        /// </summary>
+        /// <param name="message"></param>
+        /// <returns></returns>
+        public static ApiResponse BadRequest(string message = "Bad Request")
+        {
+            return new ApiResponse
+            {
+                Code = ApiResponseCode.BadRequest,
+                Message = string.IsNullOrEmpty(message) ? "Bad Request" : message
             };
         }
     }

@@ -14,7 +14,6 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@frog/layouts": ["packages/layouts"],
       "@frog/styles": ["packages/styles"],
       "@frog/common-ui": ["packages/common-ui"],
       "@frog/utils": ["packages/utils"],

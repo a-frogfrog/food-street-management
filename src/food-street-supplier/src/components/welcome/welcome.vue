@@ -1,7 +1,7 @@
 <script setup lang="ts">
 interface WelComeProps {
-  cover: string;
-  title: string;
+  cover?: string;
+  title?: string;
 }
 
 defineProps<WelComeProps>();

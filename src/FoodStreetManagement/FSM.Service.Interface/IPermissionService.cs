@@ -2,7 +2,6 @@
 using FSM.Infrastructure.Dto.Api.Request.Admin.Permission;
 using FSM.Infrastructure.Dto.Common;
 using FSM.Infrastructure.Dto.Service.Permission;
-using FSM.Infrastructure.Dto.Service.User;
 using FSM.Infrastructure.EFCore.MySql.Models;
 
 namespace FSM.Service.Interface
@@ -53,6 +52,6 @@ namespace FSM.Service.Interface
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
-        List<Userpermission> GetUserPermissionList(string userId);
+        List<UserPermission> GetUserPermissionList(string userId);
     }
 }

@@ -6,7 +6,7 @@ namespace FSM.Infrastructure.EFCore.MySql.Models
     /// <summary>
     /// 用户权限表
     /// </summary>
-    public partial class Userpermission
+    public partial class UserPermission
     {
         /// <summary>
         /// 用户权限ID

@@ -54,7 +54,7 @@ namespace FSM.Api.Controllers.Admin
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(new ApiResponse { Code = ApiResponseCode.Failed, Message = "Invalid request" });
+                return Ok(ResponseHelper.BadRequest("Invalid request"));
             }
 
             dto.Account = dto.Account.Trim();

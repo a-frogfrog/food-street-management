@@ -22,7 +22,7 @@ function useClassNames() {
       'order-filter',
       'sticky',
       'top-0',
-      'bg-white',
+      'bg-[#FFFAFA]',
       'z-10',
       '!pt-3',
       'transition-all',
@@ -63,7 +63,7 @@ function useClassNames() {
 }
 
 const { classNames } = useClassNames();
-const { isShadow } = useScrollShadow('.content-box', '.order-filter');
+const { isShadow } = useScrollShadow('.page', '.order-filter');
 
 function getShadow() {
   return isShadow.value ? 'shadow-lg rounded-b-2xl' : '';

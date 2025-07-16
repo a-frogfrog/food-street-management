@@ -13,7 +13,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
-      '@frog/layouts': resolve(__dirname, './packages/layouts'),
       '@frog/styles': resolve(__dirname, './packages/styles'),
       '@frog/common-ui': resolve(__dirname, './packages/common-ui'),
       '@frog/utils': resolve(__dirname, './packages/utils'),

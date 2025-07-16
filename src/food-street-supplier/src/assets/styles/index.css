@@ -1,15 +1,14 @@
 @import "tailwindcss";
-
-
+@import 'vant/lib/index.css';
 
 .font-smiley {
   font-family: 'Smiley Sans', cursive;
 }
 
+
 .font-inter {
   font-family: 'Inter', sans-serif;
 }
-
 
 * {
   font-family: 'Inter', sans-serif;

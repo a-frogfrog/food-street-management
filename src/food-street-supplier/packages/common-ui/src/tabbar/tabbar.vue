@@ -1,7 +1,10 @@
 <script setup lang="ts">
+import { useRoute } from 'vue-router';
 import type { TabBarEmits, TabBarProps } from './types';
 import { useTabBar } from './use-tabbar';
 
+const route = useRoute();
+console.log(route.name);
 const active = defineModel('active', {
   type: String,
   required: true,

@@ -1,3 +1,4 @@
+import { debounce } from '@frog/utils';
 import { onBeforeMount, onMounted, ref } from 'vue';
 
 /**
@@ -20,18 +21,19 @@ export function useScrollShadow(
     }
 
     const rect = shadowElement.value.getBoundingClientRect();
-    console.log(!(rect.top > 0));
     !(rect.top > 0) ? (isShadow.value = true) : (isShadow.value = false);
   };
+
+  const debounceScroll = debounce(handleScroll, 100);
 
   onMounted(() => {
     scrollElement.value = document.querySelector(scrollSelector);
     shadowElement.value = document.querySelector(shadowSelector);
 
-    scrollElement.value?.addEventListener('scroll', handleScroll);
+    scrollElement.value?.addEventListener('scroll', debounceScroll);
   });
   onBeforeMount(() => {
-    scrollElement.value?.removeEventListener('scroll', handleScroll);
+    scrollElement.value?.removeEventListener('scroll', debounceScroll);
   });
   return {
     isShadow,

@@ -158,7 +158,7 @@ namespace FSM.Service.Instance
             return data;
         }
 
-        public List<Userpermission> GetUserPermissionList(string userId)
+        public List<UserPermission> GetUserPermissionList(string userId)
         {
             var query = _permissionDependencies.UserPermission.QueryAll(q => q.UserId == userId).ToList();
             return query;
@@ -212,10 +212,10 @@ namespace FSM.Service.Instance
             if (!permissions.Any())
                 return Failed("Permission is not exist");
 
-            List<Userpermission> data = new();
+            List<UserPermission> data = new();
             dto.Permissions.ForEach(s =>
             {
-                data.Add(new Userpermission()
+                data.Add(new UserPermission()
                 {
                     UserPermId = _guidGenerator.GenerateSequentialGuid(),
                     UserId = dto.UserId,

@@ -24,6 +24,12 @@
         Error = 500,
 
         /// <summary>
+        /// Bad Request
+        /// 请求错误
+        /// </summary>
+        BadRequest = 400,
+
+        /// <summary>
         /// Unauthorized
         /// 未授权
         /// </summary>

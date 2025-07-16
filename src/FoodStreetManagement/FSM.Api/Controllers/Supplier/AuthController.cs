@@ -1,4 +1,5 @@
 ﻿using FSM.Infrastructure.Dto.Api.Request.Admin.Login;
+using FSM.Infrastructure.Helpers;
 using FSM.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,8 +28,23 @@ namespace FSM.Api.Controllers.Supplier
         [HttpPost]
         public IActionResult Login([FromBody] LoginRequestDto dto) 
         {
+            if (!ModelState.IsValid)
+            {
+                return Ok(ResponseHelper.BadRequest());
+            }
+
             var result = _authService.SupplierLogin(dto);
             return Ok(result);    
+        }
+
+        /// <summary>
+        /// Supplier 检查登录
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public IActionResult CheckLogin()
+        {
+            return Ok();
         }
     }
 }

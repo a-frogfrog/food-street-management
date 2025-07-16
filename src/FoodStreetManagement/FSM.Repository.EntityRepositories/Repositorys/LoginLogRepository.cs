@@ -5,9 +5,9 @@ using FSM.Repository.Interface;
 namespace FSM.Repository.EntityRepositories.Repositorys
 {
     [Provider, Inject]
-    public class LoginLogRepository : BaseRepository<Loginlog>
+    public class LoginLogRepository : BaseRepository<LoginLog>
     {
-        public LoginLogRepository(IRepository<Loginlog> repository) : base(repository)
+        public LoginLogRepository(IRepository<LoginLog> repository) : base(repository)
         {
         }
     }

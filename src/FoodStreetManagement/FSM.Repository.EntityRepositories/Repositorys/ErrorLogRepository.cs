@@ -5,9 +5,9 @@ using FSM.Repository.Interface;
 namespace FSM.Repository.EntityRepositories.Repositorys
 {
     [Provider, Inject]
-    public class ErrorLogRepository : BaseRepository<Errorlog>
+    public class ErrorLogRepository : BaseRepository<ErrorLog>
     {
-        public ErrorLogRepository(IRepository<Errorlog> repository) : base(repository)
+        public ErrorLogRepository(IRepository<ErrorLog> repository) : base(repository)
         {
         }
     }

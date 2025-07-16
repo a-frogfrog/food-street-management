@@ -1,66 +1,43 @@
 <script setup lang="ts">
-import { TabBar } from '@frog/common-ui';
-import type { TabBarProps } from '@frog/common-ui';
-import { useTheme } from '@frog/hooks';
-import { BasicLayout } from '@frog/layouts';
-import { ref } from 'vue';
+import { Page, Content, TabBar, ToolBar } from '@frog/common-ui';
+import { ToolBarPopup } from '@/components';
+import { useTabBar } from './tabbar';
+import { useRoute } from 'vue-router';
+import { ref, watchEffect } from 'vue';
 
-function useTabBar() {
-  const activeName = ref('order');
-  const item: TabBarProps = {
-    items: [
-      {
-        name: 'order',
-        icon: 'iconfont icon-dingdan',
-        label: '订单',
-      },
-      {
-        name: 'analysis',
-        icon: 'iconfont icon-_shiyongcishu',
-        label: '分析',
-      },
-      {
-        name: 'product',
-        icon: 'iconfont icon-shangpin',
-        label: '商品',
-      },
-      {
-        name: 'mine',
-        icon: 'iconfont icon-wode',
-        label: '我的',
-        cover:
-          'https://demos.themeselection.com/materio-vuetify-vuejs-admin-template/demo-1/images/avatars/avatar-1.png',
-      },
-    ],
-  };
-
-  function handleClick(name: string) {
-    activeName.value = name;
-  }
-
-  return {
-    activeName,
-    item,
-    handleClick,
-  };
-}
+defineOptions({ name: 'BasicLayout' });
 
 const { activeName, item, handleClick } = useTabBar();
-const { currentTheme } = useTheme();
-console.log(currentTheme);
+
+const route = useRoute();
+const isTabBar = ref(route.meta.tabBarPage);
+watchEffect(() => {
+  isTabBar.value = route.meta.tabBarPage;
+});
+
+const isShow = ref(false);
+function handleToolBarClick() {
+  isShow.value = isShow.value ? false : true;
+}
 </script>
 
 <template>
-  <BasicLayout>
-    <template #tabbar>
+  <Page>
+    <template #popup>
+      <ToolBarPopup v-model:show="isShow" />
+    </template>
+    <template #toolbar v-if="isTabBar">
+      <ToolBar @tool-bar-click="handleToolBarClick" />
+    </template>
+    <template #tabbar v-if="isTabBar">
       <TabBar
         v-model:active="activeName"
         :items="item.items"
         @tab-bar-item-click="handleClick"
-      >
-      </TabBar>
+      />
     </template>
-  </BasicLayout>
+    <template #content>
+      <Content />
+    </template>
+  </Page>
 </template>
-
-<style scoped></style>

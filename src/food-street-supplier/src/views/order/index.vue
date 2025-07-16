@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { Page } from '@frog/common-ui';
 import { OrderItem, OrderFilter } from './components';
 import { WelCome } from '@/components';
 
@@ -50,7 +51,7 @@ const { currentSelect, options, selectChange } = useOrderFilter();
 </script>
 <template>
   <div>
-    <WelCome :title="title" :cover="'/imgs/background/welcome.png'" />
+    <WelCome :title="title" cover="/imgs/background/welcome.png" />
     <OrderFilter
       v-model="currentSelect"
       :options="options"

@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Button } from 'vant';
+</script>
 <template>
-  <div>我的</div>
+  <div>
+    <Button>f</Button>
+  </div>
 </template>
 <style scoped></style>

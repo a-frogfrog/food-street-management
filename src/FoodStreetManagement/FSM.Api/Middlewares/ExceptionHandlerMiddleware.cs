@@ -1,5 +1,6 @@
 ﻿using FSM.Infrastructure.Dto.Common;
 using FSM.Infrastructure.Dto.Service.Log.Error;
+using FSM.Infrastructure.Helpers;
 using FSM.Infrastructure.Tools;
 using FSM.Service.Interface;
 
@@ -25,7 +26,8 @@ namespace FSM.Api.MiddleWares
         {
             _next = next;
             string _fileName = "ExceptionLog-" + DateTime.Now.ToString("yyyy-MM-dd");
-            _filePath = configuration["Logger:ExceptionFile:Path"] + _fileName
+
+            _filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory) + _fileName
                 ?? Path.Combine(AppDomain.CurrentDomain.BaseDirectory) + _fileName;
         }
 
@@ -49,12 +51,9 @@ namespace FSM.Api.MiddleWares
 
                 //返回异常信息
                 context.Response.StatusCode = (int)ApiResponseCode.Error;
-                context.Response.ContentType = "application/json";
-                var result = new ApiResponse()
-                {
-                    Code = ApiResponseCode.Error,
-                    Message = ex.Message,
-                };
+                context.Response.ContentType = "application/json";               
+                var result = ResponseHelper.Error(ex.Message);
+
                 await context.Response.WriteAsJsonAsync(result);
             }
 

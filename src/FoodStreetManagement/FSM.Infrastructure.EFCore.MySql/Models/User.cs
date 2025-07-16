@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace FSM.Infrastructure.EFCore.MySql.Models
 {
+    /// <summary>
+    /// 管理员表
+    /// </summary>
     public partial class User
     {
         /// <summary>
