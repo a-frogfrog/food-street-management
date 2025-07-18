@@ -1,0 +1,25 @@
+.frog-button {
+  --frog-button-border-color: #ccc;
+}
+
+.frog-button {
+  border: 1px solid var(--frog-button-border-color);
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  transition: border-color 0.2s ease;
+}
+
+.frog-button--primary {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.frog-button.is--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.frog-button.is--round {
+  border-radius: 20px;
+}

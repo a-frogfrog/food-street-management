@@ -1,6 +1,6 @@
 ﻿using FSM.Infrastructure.Dto.Api.Request.Admin.Login;
 using FSM.Infrastructure.Helpers;
-using Microsoft.AspNetCore.Http;
+using FSM.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FSM.Api.Controllers.Merchant
@@ -13,6 +13,15 @@ namespace FSM.Api.Controllers.Merchant
     /// authentication-specific functionality.</remarks>
     public class AuthController : MerchantController
     {
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AuthController"/> class.
+        /// </summary>
+        /// <param name="baseService"></param>
+        public AuthController(IBaseService baseService) : base(baseService)
+        {
+        }
+
         /// <summary>
         /// Merchant 登录
         /// </summary>

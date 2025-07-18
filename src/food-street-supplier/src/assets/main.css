@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import 'vant/lib/index.css';
+@import './icons/icon.css';
 
 .font-smiley {
   font-family: 'Smiley Sans', cursive;

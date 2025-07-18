@@ -30,11 +30,12 @@ function handleToolBarClick() {
       <ToolBar @tool-bar-click="handleToolBarClick" />
     </template>
     <template #tabbar v-if="isTabBar">
-      <TabBar
-        v-model:active="activeName"
-        :items="item.items"
-        @tab-bar-item-click="handleClick"
-      />
+      <KeepAlive>
+        <TabBar
+          v-model:active="activeName"
+          :items="item.items"
+          @tab-bar-item-click="handleClick"
+      /></KeepAlive>
     </template>
     <template #content>
       <Content />

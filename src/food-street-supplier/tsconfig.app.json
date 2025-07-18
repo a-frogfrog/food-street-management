@@ -15,9 +15,15 @@
     "paths": {
       "@/*": ["src/*"],
       "@frog/styles": ["packages/styles"],
+      "@frog/styles/*": ["packages/styles/*"],
       "@frog/common-ui": ["packages/common-ui"],
+      "@frog/common-ui/*": ["packages/common-ui/*"],
       "@frog/utils": ["packages/utils"],
-      "@frog/hooks": ["packages/hooks"]
+      "@frog/utils/*": ["packages/utils/*"],
+      "@frog/hooks": ["packages/hooks"],
+      "@frog/hooks/*": ["packages/hooks/*"],
+      "@frog/icons": ["packages/icons"],
+      "@frog/icons/*": ["packages/icons/*"]
     }
   },
   "include": [

@@ -1,7 +1,13 @@
 <script setup lang="ts">
+import defaultCover from '/imgs/background/welcome.jpg';
+
 interface WelComeProps {
   cover?: string;
   title?: string;
+  size: {
+    width: string;
+    height: string;
+  };
 }
 
 defineProps<WelComeProps>();
@@ -9,7 +15,10 @@ defineProps<WelComeProps>();
 
 <template>
   <div class="welcome">
-    <img src="/imgs/background/welcome.jpg" />
+    <img
+      :src="cover || defaultCover"
+      :style="{ height: size.height, width: size.width }"
+    />
     <div class="mask">
       <div class="mask-content">
         <h1 class="text-xl font-bold font-smiley">
@@ -23,6 +32,10 @@ defineProps<WelComeProps>();
 <style scoped>
 .welcome {
   position: relative;
+}
+
+.welcome img {
+  object-fit: cover;
 }
 
 .mask {

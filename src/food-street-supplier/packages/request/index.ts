@@ -1,1 +1,1 @@
-export { default as createRequest } from "./src/request";
+export { default as createAxiosRequest } from './axios';

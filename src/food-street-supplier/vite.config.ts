@@ -17,6 +17,7 @@ export default defineConfig({
       '@frog/common-ui': resolve(__dirname, './packages/common-ui'),
       '@frog/utils': resolve(__dirname, './packages/utils'),
       '@frog/hooks': resolve(__dirname, './packages/hooks'),
+      '@frog/icons': resolve(__dirname, './packages/icons'),
     },
   },
 });

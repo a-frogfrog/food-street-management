@@ -1,2 +1,2 @@
-export * from './src/throttle';
-export * from './src/debounce';
+export * from './helpers/throttle';
+export * from './helpers/debounce';
