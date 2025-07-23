@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FSM.Infrastructure.Attribute\FSM.Infrastructure.Attribute.csproj" />
+    <ProjectReference Include="..\FSM.Infrastructure.Dto\FSM.Infrastructure.Dto.csproj" />
+    <ProjectReference Include="..\FSM.Infrastructure.EFCore.MySql\FSM.Infrastructure.EFCore.MySql.csproj" />
+    <ProjectReference Include="..\FSM.Infrastructure.Helpers\FSM.Infrastructure.Helpers.csproj" />
+    <ProjectReference Include="..\FSM.Infrastructure.Tools\FSM.Infrastructure.Tools.csproj" />
+    <ProjectReference Include="..\FSM.Service.Dependencies\FSM.Service.Dependencies.csproj" />
+    <ProjectReference Include="..\FSM.Service.Interface\FSM.Service.Interface.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ServiceStack.Redis" Version="6.11.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>10.0</LangVersion>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\FSM.Infrastructure.Attribute\FSM.Infrastructure.Attribute.csproj" />
+		<ProjectReference Include="..\FSM.Infrastructure.EFCore.MySql\FSM.Infrastructure.EFCore.MySql.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Api\Response\Admin\User\" />
+	  <Folder Include="Service\Location\" />
+	</ItemGroup>
+
+</Project>

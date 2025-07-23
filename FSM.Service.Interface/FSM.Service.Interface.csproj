@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FSM.Infrastructure.Attribute\FSM.Infrastructure.Attribute.csproj" />
+    <ProjectReference Include="..\FSM.Infrastructure.Dto\FSM.Infrastructure.Dto.csproj" />
+    <ProjectReference Include="..\FSM.Infrastructure.EFCore.MySql\FSM.Infrastructure.EFCore.MySql.csproj" />
+    <ProjectReference Include="..\FSM.Infrastructure.EFCore.SqlServer\FSM.Infrastructure.EFCore.SqlServer.csproj" />
+    <ProjectReference Include="..\FSM.Infrastructure.Helpers\FSM.Infrastructure.Helpers.csproj" />
+  </ItemGroup>
+
+</Project>

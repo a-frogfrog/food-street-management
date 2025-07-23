@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IGeekFan.AspNetCore.Knife4jUI" Version="0.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FSM.Infrastructure.EFCore.MySql\FSM.Infrastructure.EFCore.MySql.csproj" />
+    <ProjectReference Include="..\FSM.Infrastructure.EFCore.SqlServer\FSM.Infrastructure.EFCore.SqlServer.csproj" />
+    <ProjectReference Include="..\FSM.Infrastructure.Redis\FSM.Infrastructure.Redis.csproj" />
+    <ProjectReference Include="..\FSM.Repository.Instance\FSM.Repository.Instance.csproj" />
+    <ProjectReference Include="..\FSM.Repository.Interface\FSM.Repository.Interface.csproj" />
+    <ProjectReference Include="..\FSM.Service.Instance\FSM.Service.Instance.csproj" />
+    <ProjectReference Include="..\FSM.Service.Interface\FSM.Service.Interface.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+</Project>
