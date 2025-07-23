@@ -1,0 +1,25 @@
+# 编译输出目录
+bin/
+obj/
+
+# .NET Core 工具目录
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# 运行时生成的文件
+aspnetcore-iisexpress/
+*.log
+*.swp
+*.swo
+
+packages/
+
+
+# 发布输出
+publish/
+out/
