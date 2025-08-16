@@ -91,12 +91,8 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy", policy =>
     {
-        policy.WithOrigins(
-                "http://localhost:5173",
-                "http://localhost:4173",
-                "http://admin.fsm.frogfrog.cn",
-                "https://admin.fsm.frogfrog.cn"
-            ).AllowAnyHeader()
+        policy.AllowAnyOrigin()
+            .AllowAnyHeader()
             .AllowAnyMethod()
             .SetPreflightMaxAge(TimeSpan.FromHours(1));
     });
